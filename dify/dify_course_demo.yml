@@ -123,11 +123,14 @@ workflow:
       zIndex: 0
     nodes:
     - data:
-        desc: '作者：北平牧哥
+        desc: '👨‍💼作者：北平牧哥
 
+          💚微信：mugeleey
 
-          - 流程开始时初始化，输入教程名称'
-        selected: false
+          🗨微信公众号：pekingmuge
+
+          🌍Twitter: https://x.com/pekingmuge'
+        selected: true
         title: 开始
         type: start
         variables:
@@ -137,7 +140,7 @@ workflow:
           required: true
           type: text-input
           variable: course_name
-      height: 148
+      height: 180
       id: '1728198077941'
       position:
         x: 30
@@ -145,7 +148,7 @@ workflow:
       positionAbsolute:
         x: 30
         y: 295
-      selected: false
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -230,7 +233,7 @@ workflow:
           \            contents += [\n                {\n                    \"chapter\"\
           : chapter[\"chapter\"],\n                    \"title\": chapter[\"title\"\
           ],\n                    \"subtitle\": subtitle,\n                }\n   \
-          \         ]\n    return {\n        \"result\": contents[:2],\n    }"
+          \         ]\n    return {\n        \"result\": contents,\n    }"
         code_language: python3
         desc: ''
         outputs:
@@ -437,8 +440,8 @@ workflow:
         height: 424
         selected: false
         showAuthor: true
-        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"教程自动生成工作流","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"本工作流实现了生成高效且定制化的学习资料的自动化过程。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"生成教程结果演示地址：https://tutorial.pekingmuge.top","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"--------------","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"本工作流仅为演示版，能够生成完整的教程，相比完整版没有做数据分片及并行处理，但对于初学者入门Dify工作流开发已经够了。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"完整版包含如下功能：","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"1、数据分片。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"2、并行迭代处理，能大幅提高执行效率。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"3、增加了SEO信息，如果想把生成课程用于网站开发将有极大帮助。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"如果希望用到实际网站开发，生成教程网站，可联系作者获取完整版本（会收取少量费用）","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"====================================","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"作者：北平牧哥","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"🌍Twitter:
-          https://x.com/pekingmuge","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"🗨微信公众号：pekingmuge","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0}],"direction":"ltr","format":"","indent":0,"type":"root","version":1}}'
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"教程自动生成工作流","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"本工作流实现了生成高效且定制化的学习资料的自动化过程。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"生成教程结果演示地址：https://tutorial.pekingmuge.top","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"--------------","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"本工作流仅为演示版，能够生成完整的教程，相比完整版没有做数据分片及并行处理，但对于初学者入门Dify工作流开发已经够了。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"完整版包含如下功能：","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"1、数据分片。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"2、并行迭代处理，能大幅提高执行效率。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"3、增加了SEO信息，如果想把生成课程用于网站开发将有极大帮助。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"如果希望用到实际网站开发，生成教程网站，可联系作者获取完整版本（会收取少量费用）","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"====================================","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"👨‍💼作者：北平牧哥","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"💚微信：mugeleey","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"🗨微信公众号：pekingmuge","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"🌍Twitter:
+          https://x.com/pekingmuge","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0}],"direction":"ltr","format":"","indent":0,"type":"root","version":1}}'
         theme: yellow
         title: ''
         type: ''
@@ -451,12 +454,12 @@ workflow:
       positionAbsolute:
         x: 30
         y: -151.90242105040247
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
       width: 412
     viewport:
-      x: 292.69342649544296
-      y: 216.8601168971717
-      zoom: 0.7
+      x: 47.29542160499841
+      y: 267.16018942881976
+      zoom: 1.0000000000000004
