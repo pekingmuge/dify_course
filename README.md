@@ -20,7 +20,7 @@
 
 如果希望一起交流并节省时间，可联系作者获取完整版本。完整版价格 19.9 元（相比时间成本非常值得）
 
-购买地址：https://mugesoft.lemonsqueezy.com/buy/e7e143ca-360e-435b-9791-9c95c96c773e
+🛒 购买地址：https://mugesoft.lemonsqueezy.com/buy/e7e143ca-360e-435b-9791-9c95c96c773e
 
 ---
 
