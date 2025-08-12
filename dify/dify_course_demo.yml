@@ -7,19 +7,45 @@ app:
   mode: workflow
   name: 自动化教程生成-演示版
   use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/deepseek:0.0.6@dd589dc093c8084925858034ab5ec1fdf0d33819f43226c2f8c4a749a9acbbb2
 kind: app
-version: 0.1.2
+version: 0.3.0
 workflow:
   conversation_variables: []
   environment_variables: []
   features:
     file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
       image:
         enabled: false
         number_limits: 3
         transfer_methods:
         - local_file
         - remote_url
+      number_limits: 3
     opening_statement: ''
     retriever_resource:
       enabled: false
@@ -130,7 +156,7 @@ workflow:
           🗨微信公众号：pekingmuge
 
           🌍Twitter: https://x.com/pekingmuge'
-        selected: true
+        selected: false
         title: 开始
         type: start
         variables:
@@ -148,7 +174,7 @@ workflow:
       positionAbsolute:
         x: 30
         y: 295
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -159,11 +185,10 @@ workflow:
           variable_selector: []
         desc: 生成教程大纲，课程目录
         model:
-          completion_params:
-            temperature: 0
+          completion_params: {}
           mode: chat
-          name: o1-mini-2024-09-12
-          provider: openai
+          name: deepseek-chat
+          provider: langgenius/deepseek/deepseek
         prompt_template:
         - id: fa51a950-08a7-45bf-936c-14aa386a2ec6
           role: system
@@ -184,7 +209,7 @@ workflow:
         variables: []
         vision:
           enabled: false
-      height: 124
+      height: 116
       id: '1728198088794'
       position:
         x: 333
@@ -226,10 +251,10 @@ workflow:
       width: 243
     - data:
         code: "\ndef main(text: str) -> dict:\n    import re, json\n\n    pattern\
-          \ = r\"^```json\\n([\\s\\S]*)\\n```\"\n    matched = re.match(pattern, text,\
-          \ re.MULTILINE)\n    if not matched:\n        return {\"result\": \"None\"\
-          }\n    jsonstr = matched.group(1)\n    obj = json.loads(jsonstr)\n    contents\
-          \ = []\n    for chapter in obj:\n        for subtitle in chapter['contents']:\n\
+          \ = r\"^```json\\n([\\s\\S]*)\\n```\"\n    matched = re.search(pattern,\
+          \ text, re.MULTILINE)\n    if not matched:\n        return {\"result\":\
+          \ \"None\"}\n    jsonstr = matched.group(1)\n    obj = json.loads(jsonstr)\n\
+          \    contents = []\n    for chapter in obj:\n        for subtitle in chapter['contents']:\n\
           \            contents += [\n                {\n                    \"chapter\"\
           : chapter[\"chapter\"],\n                    \"title\": chapter[\"title\"\
           ],\n                    \"subtitle\": subtitle,\n                }\n   \
@@ -263,7 +288,9 @@ workflow:
       width: 243
     - data:
         desc: ''
+        error_handle_mode: terminated
         height: 190
+        is_parallel: false
         iterator_selector:
         - '1728203511475'
         - result
@@ -271,6 +298,7 @@ workflow:
         - '1728463823248'
         - result
         output_type: array[object]
+        parallel_nums: 10
         selected: false
         start_node_id: 1728217105363start
         title: 迭代生成课程
@@ -320,11 +348,10 @@ workflow:
         isInIteration: true
         iteration_id: '1728217105363'
         model:
-          completion_params:
-            temperature: 0
+          completion_params: {}
           mode: chat
-          name: gpt-4o-mini
-          provider: openai
+          name: deepseek-chat
+          provider: langgenius/deepseek/deepseek
         prompt_template:
         - id: 42d3ce21-8fa0-4fe3-b28b-3c6807fe8575
           role: system
@@ -340,8 +367,8 @@ workflow:
         vision:
           configs:
             detail: high
-          enabled: true
-      height: 96
+          enabled: false
+      height: 88
       id: '1728218323079'
       parentId: '1728217105363'
       position:
@@ -428,7 +455,7 @@ workflow:
       positionAbsolute:
         x: 1680.8919201860167
         y: 360
-      selected: false
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -460,6 +487,6 @@ workflow:
       type: custom-note
       width: 412
     viewport:
-      x: 47.29542160499841
-      y: 267.16018942881976
-      zoom: 1.0000000000000004
+      x: 47.22389998344454
+      y: 252.19595739928553
+      zoom: 0.6597539553864473
